@@ -16,6 +16,9 @@ class CommentsController < ApplicationController
          @comment = @article.comments.find(params[:id])
      end
 
+     def destroy
+     end    
+
      def update
          if @comemnt.update(comment_params)
              redirect_to article_path(@article)
