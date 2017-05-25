@@ -39,6 +39,7 @@ before_action :find_comment , only: [:edit, :update, :destroy]
      end    
 
      def find_article
-
+        @article = Article.find(params[:article_id])
+     end   
 
 end
