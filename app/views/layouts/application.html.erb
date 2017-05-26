@@ -25,15 +25,22 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
+      <!-- Log in -->
+        <% if user_signed_in? %>
         <li class="nav-item">
           <a class="nav-link" href="<%= new_user_registration_path %>">Sign Up</a>
         </li>
+         <li class="nav-item">
+          <a class="nav-link" href="<%= new_article_path %>">New Articles</a>
+        </li>
+        <% else %>
         <li class="nav-item">
           <a class="nav-link" href="<%= new_user_session_path %>">Sign In</a>
         </li>
         <li class="nav-item">
           <a class="nav-link disabled" data-method="delete" href="<%= destroy_user_session_path %>">Log Out</a>
         </li>
+        <% end %>
       </ul>
       <form class="form-inline my-2 my-lg-0">
           <%= form_tag(articles_path, :method => "get", id: "search-form" ) do %>
