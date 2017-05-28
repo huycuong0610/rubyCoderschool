@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 20170526104744) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["article_id"], name: "index_comments_on_article_id", using: :btree
+    t.integer  "user_id"
   end
 
   create_table "models", force: :cascade do |t|

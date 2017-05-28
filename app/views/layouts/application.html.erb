@@ -32,13 +32,13 @@
         </li>
          <li class="nav-item">
           <a class="nav-link" href="<%= new_article_path %>">New Articles</a>
+        </li>        
+        <li class="nav-item">
+          <a class="nav-link disabled" data-method="delete" href="<%= destroy_user_session_path %>">Log Out</a>
         </li>
         <% else %>
         <li class="nav-item">
           <a class="nav-link" href="<%= new_user_session_path %>">Sign In</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" data-method="delete" href="<%= destroy_user_session_path %>">Log Out</a>
         </li>
         <% end %>
       </ul>
