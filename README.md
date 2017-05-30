@@ -11,7 +11,7 @@ Submitted by: **Cuong Nguyen**
 
 Time spent: **12** hours spent in total
 
-URL: **aqueous-gorge-37996.heroku.com**
+URL: **https://aqueous-gorge-37996.herokuapp.com/m**
 
 ## User Stories
 
