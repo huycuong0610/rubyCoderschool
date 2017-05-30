@@ -4,7 +4,6 @@ before_action :find_comment , only: [:edit, :update, :destroy]
 
 
     def create 
-        @article = Article.find(params[:article_id])
         @comment = @article.comments.create(comment_params)
         @comment.user = current_user
 
