@@ -21,7 +21,7 @@ before_action :find_comment , only: [:edit, :update, :destroy]
      end
 
      def destroy
-         @comemnt.destroy
+         @comment.destroy
          redirect_to article_path(@article)
      end    
 
@@ -43,4 +43,7 @@ before_action :find_comment , only: [:edit, :update, :destroy]
         @article = Article.find(params[:article_id])
      end   
 
+     def find_comment
+        @comment = @article.comments.find(params[:id])
+     end   
 end
