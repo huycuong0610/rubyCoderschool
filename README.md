@@ -38,9 +38,9 @@ The following is a list of **required** features of the application you'll build
 
 The following **optional** features are implemented:
 
-* [  ] User can see who created the Article.
+* [ x ] User can see who created the Article.
 * [ ] User can see how many views an Article has.
-* [  ] User can see who created the Comment.
+* [ x ] User can see who created the Comment.
 * [ ] User can add "tags" to a Article, and filter Articles by tag.
 
 > HINT: if you are unsure how to implement the Search feature, you can Google how to implement a simple search form. For example, one of the sites you will find is [this](http://www.jorgecoca.com/buils-search-form-ruby-rails/)
