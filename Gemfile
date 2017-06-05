@@ -34,9 +34,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'redcarpet'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.1.0'
-end
 # bootraps 4 
 gem 'bootstrap', '~> 4.0.0.alpha6'
 group :development, :test do
