@@ -17,7 +17,7 @@
 <% if user_signed_in? %>
   <% if @article.user_id == current_user.id %>
     <%= link_to 'Edit', edit_article_path(@article) %> 
-    <%= link_to 'Destroy', article, method: :delete, data: { confirm: "Are you sure you want to delete the article #{article.title}?" } %>
+    <%= link_to 'Destroy', articles_path, method: :delete, data: { confirm: "Are you sure you want to delete the article #{article.title}?" } %>
     <%= link_to 'Back', articles_path %>
   <% end %> 
 <% end %>
