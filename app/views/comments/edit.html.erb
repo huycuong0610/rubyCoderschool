@@ -1,0 +1,7 @@
+<div class="container">
+<h2>Edit Comments</h2>
+<%= form_for [@article, @comment] do |f| %>
+    <%= f.text_field :content, label: "Comment" , size: "100x10" %>
+    <%= f.button :submit , class: "btn btn-success" %>
+    <% end %>
+</div>

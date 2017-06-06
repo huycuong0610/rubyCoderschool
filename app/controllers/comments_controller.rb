@@ -26,8 +26,11 @@ before_action :find_comment , only: [:edit, :update, :destroy]
      end    
 
      def update
+         @article = Article.find(params[:article_id])
+         @comment = @article.comments.find(params[:id])
+
          @comment.content =comment_params
-         if @comemnt.update(comment_params)
+         if @comment.update(comment_params)
              redirect_to article_path(@article)
          else
              render 'edit'
